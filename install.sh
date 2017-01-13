@@ -11,12 +11,12 @@ fi
 sudo mv cca_read_dfxml.py /usr/share/dfxml/python/
 
 # Move files into /usr/share/cca-dfxmlreader
-sudo mv main.py /usr/share/cca-diskimageprocessor
-sudo mv launch /usr/share/cca-diskimageprocessor
-sudo mv design.py /usr/share/cca-diskimageprocessor
-sudo mv design.ui /usr/share/cca-diskimageprocessor
-sudo mv LICENSE /usr/share/cca-diskimageprocessor
-sudo mv README.md /usr/share/cca-diskimageprocessor
+sudo mv main.py /usr/share/cca-dfxmlreader
+sudo mv launch /usr/share/cca-dfxmlreader
+sudo mv design.py /usr/share/cca-dfxmlreader
+sudo mv design.ui /usr/share/cca-dfxmlreader
+sudo mv LICENSE /usr/share/cca-dfxmlreader
+sudo mv README.md /usr/share/cca-dfxmlreader
 
 # Make "CCA Tools" folder on Desktop if doesn't already exist
 if [ ! -d "/home/bcadmin/Desktop/CCA Tools" ]; then
