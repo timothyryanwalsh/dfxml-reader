@@ -8,7 +8,7 @@ if [ ! -d /usr/share/cca-dfxmlreader ]; then
 fi
 
 # Move cca_read_dfxml.py to dfxml python dir
-sudo mv dfxmlreader/cca_read_dfxml.py /usr/share/dfxml/python/
+sudo mv cca_read_dfxml.py /usr/share/dfxml/python/
 
 # Move files into /usr/share/cca-dfxmlreader
 sudo mv main.py /usr/share/cca-diskimageprocessor
