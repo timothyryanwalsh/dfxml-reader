@@ -1,2 +1,2 @@
 #!/bin/bash
-python /usr/share/dfxml-reader/main.py
+python /usr/share/ccatools/dfxmlreader/main.py
