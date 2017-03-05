@@ -20,6 +20,7 @@ sudo mv main.py /usr/share/ccatools/dfxmlreader
 sudo mv launch /usr/share/ccatools/dfxmlreader
 sudo mv design.py /usr/share/ccatools/dfxmlreader
 sudo mv design.ui /usr/share/ccatools/dfxmlreader
+sudo mv icon.png /usr/share/ccatools/dfxmlreader
 sudo mv LICENSE /usr/share/ccatools/dfxmlreader
 sudo mv README.md /usr/share/ccatools/dfxmlreader
 
@@ -34,7 +35,7 @@ echo '[Desktop Entry]' | sudo tee --append '/home/bcadmin/Desktop/CCA Tools/DFXM
 echo 'Type=Application' | sudo tee --append '/home/bcadmin/Desktop/CCA Tools/DFXML Reader.desktop'
 echo 'Name=DFXML Reader' | sudo tee --append '/home/bcadmin/Desktop/CCA Tools/DFXML Reader.desktop'
 echo 'Exec=/usr/share/ccatools/dfxmlreader/launch' | sudo tee --append '/home/bcadmin/Desktop/CCA Tools/DFXML Reader.desktop'
-echo 'Icon=' | sudo tee --append '/home/bcadmin/Desktop/CCA Tools/DFXML Reader.desktop'
+echo 'Icon=/usr/share/ccatools/dfxmlreader/icon.png' | sudo tee --append '/home/bcadmin/Desktop/CCA Tools/DFXML Reader.desktop'
 
 # Change permissions, ownership for CCA Tools
 sudo chown -R bcadmin:bcadmin '/home/bcadmin/Desktop/CCA Tools'
