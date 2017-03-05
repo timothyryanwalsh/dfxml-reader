@@ -12,11 +12,9 @@ if [ ! -d /usr/share/ccatools/dfxmlreader ]; then
   sudo mkdir /usr/share/ccatools/dfxmlreader
 fi
 
-# Move cca_read_dfxml.py to dfxml python dir
-sudo mv cca_read_dfxml.py /usr/share/dfxml/python/
-
 # Move files into /usr/share/ccatools/dfxmlreader
 sudo mv main.py /usr/share/ccatools/dfxmlreader
+sudo mv cca_read_dfxml.py /usr/share/ccatools/dfxmlreader
 sudo mv launch /usr/share/ccatools/dfxmlreader
 sudo mv design.py /usr/share/ccatools/dfxmlreader
 sudo mv design.ui /usr/share/ccatools/dfxmlreader

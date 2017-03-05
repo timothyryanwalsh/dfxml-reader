@@ -2,11 +2,13 @@
 # -*- coding: utf-8 -*-
 
 # make readable txt report of dates for fileobjects in a dfxml file
-# script must be run from /usr/share/dfxml/python
 
 import argparse
-import Objects
 import sys
+
+#import Objects.py from python dfxml tools
+sys.path.append('/usr/share/dfmxl/python')
+import Objects
 
 def _make_parser():
     parser = argparse.ArgumentParser()
@@ -48,6 +50,8 @@ def main():
         mtimes.append(mtime)
 
         crtime = obj.crtime
+        if not crtime:
+            crtime = obj.ctime # account for "ctime" in md5deep-created DFXML
         if not crtime:
             crtime = ''
         crtime = str(crtime)
