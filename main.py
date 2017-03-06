@@ -42,7 +42,7 @@ class ProcessorApp(QMainWindow, design.Ui_MainWindow):
         self.textEdit.clear()
         
         # path to script
-        self.processing_script = "/usr/share/dfxml/python/cca_read_dfxml.py"
+        self.processing_script = "/usr/share/ccatools/dfxmlreader/cca_read_dfxml.py"
 
         # start QProcess
         self.proc = QProcess()
