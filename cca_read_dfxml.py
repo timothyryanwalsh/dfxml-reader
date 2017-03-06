@@ -7,7 +7,7 @@ import argparse
 import sys
 
 #import Objects.py from python dfxml tools
-sys.path.append('/usr/share/dfmxl/python')
+sys.path.append('/usr/share/dfxml/python')
 import Objects
 
 def _make_parser():
